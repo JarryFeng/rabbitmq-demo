@@ -28,12 +28,15 @@ Headers exchange(头交换机)
     2.不同于直连交换机，路由键在此类型上不启任务作用。如果N个队列绑定到某个扇型交换机上，当有消息发送给此扇型交换机时，交换机会将消息的发送给这所有的N个队列
 
 ### <font color=red>4.路由-交换机类型类 direct</font>
-(1)一个队列绑定多个路由
-![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct.jpg)
-(2)多个队列绑定一个路由
-![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct_2.jpg)
-(3)多个队列绑定多个路由
-![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct_3.jpg)
+(1)一个队列绑定多个路由   
+![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct.jpg)  
+
+(2)多个队列绑定一个路由   
+![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct_2.jpg)    
+
+(3)多个队列绑定多个路由   
+![avatar](https://github.com/JarryFeng/rabbitmq-demo/blob/master/src/main/resources/static/picture/direct_3.jpg)    
+
 
     【直连型交换机(direct exchange)】是根据消息携带的路由键（routing key）将消息投递给对应队列的，步骤如下：
     1.将一个队列绑定到某个交换机上，同时赋予该绑定一个路由键（routing key）
